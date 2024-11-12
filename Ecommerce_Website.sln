@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Ecommerce_Website", ".", "{224BAE13-9CF1-4029-B122-2D0123EE4105}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_57750"
+		Debug.AspNetCompiler.PhysicalPath = "..\Ecommerce_Website\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57750\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_57750"
+		Release.AspNetCompiler.PhysicalPath = "..\Ecommerce_Website\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57750\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "57750"
+		SlnRelativePath = "..\Ecommerce_Website\"
+		DefaultWebSiteLanguage = "Visual Basic"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{224BAE13-9CF1-4029-B122-2D0123EE4105}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{224BAE13-9CF1-4029-B122-2D0123EE4105}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {65157695-DA0F-4096-BEAC-5BAB4AB1CA26}
+	EndGlobalSection
+EndGlobal

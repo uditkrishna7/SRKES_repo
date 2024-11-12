@@ -1,0 +1,8 @@
+﻿ <div id="nav-bar">
+     <nav class="header">
+         <h1 id="srkname">Shree Radha Krishna Enterprises</h1>
+         <div id="navbar">
+              <a class="#home" href="#home">Home</a>
+              <a href="Categories.aspx">Categories</a>
+              <a href="#about">About</a>
+         </div>

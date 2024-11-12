@@ -1,0 +1,130 @@
+﻿/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #D3EE98; /* Light Green */
+    color: #333; /* Dark Gray */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #72BF78; /* Medium Green */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+    header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+    }
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+    nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+            nav ul li a:hover {
+                color: #FEFF9F; /* Light Yellow */
+            }
+
+/* Main content styles */
+main {
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #34495e; /* Dark Blue Gray */
+    border-bottom: 3px solid #72BF78; /* Medium Green */
+}
+
+/* Category styles */
+.category {
+    background-color: #A0D683; /* Muted Green */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+    .category img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .category p {
+        margin: 5px 0;
+        color: #333; /* Dark Gray */
+    }
+
+/* Button styles */
+button,
+input[type="submit"],
+input[type="button"] {
+    background-color: #72BF78; /* Medium Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+    button:hover,
+    input[type="submit"]:hover {
+        background-color: #FEFF9F; /* Light Yellow */
+    }
+
+/* Footer styles */
+footer {
+    background-color: #72BF78; /* Medium Green */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+    footer p {
+        margin: 0;
+        font-size: 1rem;
+    }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .category {
+        width: 100%;
+    }
+}
