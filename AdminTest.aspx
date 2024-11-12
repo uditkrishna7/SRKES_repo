@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Admin Panel</title>
+    <title>Admin Dashboaord</title>
     <style>
         /* Global Styles */
         body {
