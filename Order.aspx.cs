@@ -93,7 +93,7 @@ public partial class Order : Page
         decimal totalCost;
         decimal.TryParse(txtCost.Text, out totalCost);
         string deliveryDate = txtDeliveryDate.Text;
-
+//Is line mei kuch dikkat aa rahi hai, yaa to database se match nahi ho raha ya fir pata nahi kya hora hai, order button pe click krne pe instance failure dikha raha
         string connectionString = @"Data Source=UDIT\\SQLEXPRESS;Initial Catalog=OrderDB;Integrated Security=True;Encrypt=False";
         string query = "INSERT INTO Orders (BoxType, BoxSize, BoxColor, Quantity, CustomerName, CustomerAddress, CustomerContact, PaymentMode, TransactionId, CustomerNotes, TotalCost, DeliveryDate) " +
                        "VALUES (@BoxType, @BoxSize, @BoxColor, @Quantity, @CustomerName, @CustomerAddress, @CustomerContact, @PaymentMode, @TransactionId, @CustomerNotes, @TotalCost, @DeliveryDate)";
