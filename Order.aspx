@@ -30,14 +30,14 @@
             var formattedDate = today.toISOString().split("T")[0];
             document.getElementById('<%= txtDeliveryDate.ClientID %>').value = formattedDate;
         }
-        function updateCost() {
+       <%-- function updateCost() {
             var boxType = document.getElementById('<%= ddlBoxType.ClientID %>').value;
             var boxSize = document.getElementById('<%= ddlBoxSize.ClientID %>').value;
             var quantity = document.getElementById('<%= txtQuantity.ClientID %>').value;
             if (quantity >= 100) {
                 __doPostBack('<%= txtCost.ClientID %>', '');
             }
-        }
+        }--%>
     </script>
 </head>
 <body>
@@ -120,21 +120,25 @@
             <label for="txtCustomerNotes">Customer Notes:</label>
             <asp:TextBox ID="txtCustomerNotes" runat="server" TextMode="MultiLine" placeholder="Note" />
             <br />
-
+            <asp:Button ID="Button2" runat="server" 
+                Text="Calculate Cost" OnClick="Button2_Click" />
             <!-- Cost Calculation (Add a placeholder for cost) -->
             <label for="txtCost">Total Cost:</label>
-            <asp:TextBox ID="txtCost" runat="server" ReadOnly="True" />
+            <asp:TextBox ID="txtCost" runat="server" ReadOnly="false" />
             <br />
+            <label for="txtCost">Todays Date:</label>
+            <asp:TextBox ID="txtOrderDate" runat="server" TextMode="Date" ReadOnly="true" />
 
+           
             <!-- Set Delivery Date -->
             <label for="txtDeliveryDate">Delivery Date:</label>
-            <asp:TextBox ID="txtDeliveryDate" runat="server" TextMode="Date" />
+            <asp:TextBox ID="txtDeliveryDate" runat="server" TextMode="Date" ReadOnly="true" />
             <br />
 
             <asp:Button ID="btnSubmit" runat="server" Text="Submit Order" OnClick="btnSubmit_Click" />
             <br />
             <asp:Button ID="Button1" runat="server" Text="View Order as Admin" OnClick="Button1_Click" />
-            <div id="flashMessage" class="flash-message" style="display: none;"></div>
+            <div id="flashMessage" class="flash-message"></div>
         </form>
     </main>
     <footer>

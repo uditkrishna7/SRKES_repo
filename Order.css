@@ -1,6 +1,7 @@
 ﻿/* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
     background-color: #D3EE98; /* Light Green */
     color: #333; /* Dark Gray */
     margin: 0;
