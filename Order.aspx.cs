@@ -37,11 +37,10 @@ public partial class Order : Page
         decimal totalCost;
         decimal.TryParse(txtCost.Text, out totalCost);
         string deliveryDate = txtDeliveryDate.Text;
-        string orderDate = txtOrderDate.Text;
 
-        string connectionString = "Data Source=UDIT\\SQLEXPRESS;Initial Catalog=OrderDB;Integrated Security=True;Encrypt=False";
-        string query = "INSERT INTO Orders (BoxType, BoxSize, BoxColor, Quantity, CustomerName, CustomerAddress, CustomerContact,DeliveryDate, PaymentMode, TransactionId, CustomerNote,TotalCost,OrderDate ) " +
-                       "VALUES (@BoxType, @BoxSize, @BoxColor, @Quantity, @CustomerName, @CustomerAddress, @CustomerContact, @DeliveryDate, @PaymentMode, @TransactionId, @CustomerNote,@TotalCost, @OrderDate)";
+        string connectionString = @"Data Source=UDIT\\SQLEXPRESS;Initial Catalog=OrderDB;Integrated Security=True;Encrypt=False";
+        string query = "INSERT INTO Orders (BoxType, BoxSize, BoxColor, Quantity, CustomerName, CustomerAddress, CustomerContact, PaymentMode, TransactionId, CustomerNotes, TotalCost, DeliveryDate) " +
+                       "VALUES (@BoxType, @BoxSize, @BoxColor, @Quantity, @CustomerName, @CustomerAddress, @CustomerContact, @PaymentMode, @TransactionId, @CustomerNotes, @TotalCost, @DeliveryDate)";
 
         using (SqlConnection conn = new SqlConnection(connectionString))
         {
