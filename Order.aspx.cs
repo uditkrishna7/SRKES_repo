@@ -35,13 +35,14 @@ public partial class Order : Page
         string transactionId = txtTransactionId.Text;
         string customerNotes = txtCustomerNotes.Text;
         decimal totalCost;
+       string orderDate= txtOrderDate.Text;
         decimal.TryParse(txtCost.Text, out totalCost);
         string deliveryDate = txtDeliveryDate.Text;
 
         string connectionString = @"Data Source=UDIT\\SQLEXPRESS;Initial Catalog=OrderDB;Integrated Security=True;Encrypt=False";
-        string query = "INSERT INTO Orders (BoxType, BoxSize, BoxColor, Quantity, CustomerName, CustomerAddress, CustomerContact, PaymentMode, TransactionId, CustomerNotes, TotalCost, DeliveryDate) " +
-                       "VALUES (@BoxType, @BoxSize, @BoxColor, @Quantity, @CustomerName, @CustomerAddress, @CustomerContact, @PaymentMode, @TransactionId, @CustomerNotes, @TotalCost, @DeliveryDate)";
-
+        string query = "INSERT INTO Orders (BoxType, BoxSize, BoxColor, Quantity, CustomerName, CustomerAddress, CustomerContact, PaymentMode, TransactionId, CustomerNotes, TotalCost, DeliveryDate, OrderDAte) " +
+                       "VALUES (@BoxType, @BoxSize, @BoxColor, @Quantity, @CustomerName, @CustomerAddress, @CustomerContact, @PaymentMode, @TransactionId, @CustomerNotes, @TotalCost, @DeliveryDate, @OrderDate)";
+       
         using (SqlConnection conn = new SqlConnection(connectionString))
         {
             SqlCommand cmd = new SqlCommand(query, conn);
@@ -57,7 +58,7 @@ public partial class Order : Page
             cmd.Parameters.AddWithValue("@TransactionId", transactionId);
             cmd.Parameters.AddWithValue("@CustomerNote", customerNotes);
             cmd.Parameters.AddWithValue("@TotalCost", totalCost);
-            cmd.Parameters.AddWithValue("@OrderDate", orderDate);
+            cmd.Parameters.AddWithValue("@OrderDate",orderDate);
 
 
             try
