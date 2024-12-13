@@ -5,8 +5,8 @@ using System.Web.UI.WebControls;
 
 public partial class AdminPanel : System.Web.UI.Page
 {
-    string username = "Admin@123";
-    string password = "pwd@123";
+    string username = "Rakesh_Sinha";
+    string password = "sinharakesh12";
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!IsPostBack)
@@ -60,6 +60,9 @@ public partial class AdminPanel : System.Web.UI.Page
         }
         else
         {
+            //ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Incorrect username or password. Please try again.');", true);
+            ErrorMessage.Text = "Incorrect username or password. Please try again.";
+            ErrorMessage.Visible = true;
             AdminGridView.Visible = false;
         }
     }
