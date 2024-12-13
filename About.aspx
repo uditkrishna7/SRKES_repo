@@ -127,11 +127,11 @@
                     <p>Delights from Chandra Sweets</p>
                 </div>
                 <div class="customer">
-                    <img src="photu/Cust_img6.jpg" alt="Customer 4">
+                    <img src="photu/cake.jpg" alt="Customer 4">
                     <p>Elite Cakes & Co.</p>
                 </div>
                 <div class="customer">
-                    <img src="photu/Cust_img5.jpg" alt="Customer 5">
+                    <img src="photu/sweet.jpg" alt="Customer 5">
                     <p>Gold Box Sweets</p>
                 </div>
             </div>
